@@ -43,7 +43,7 @@ const LiveMap = ({ selectedLocation }) => {
 
     async function fetchComplaints() {
         try {
-            const res = await axios.get("http://localhost:8080/complaints");
+            const res = await axios.get("https://urban-eye-backend.onrender.com/complaints");
             console.log(res)
             setComplaints(res.data);
         } catch (err) {
