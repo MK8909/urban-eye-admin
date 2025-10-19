@@ -12,7 +12,7 @@ function Description() {
 
     const getDetail = async () => {
         try {
-            const response = await axios.get("https://urban-eye-backend.onrender.com/complaints");
+            const response = await axios.get(`https://urban-eye-backend.onrender.com/complaints/${id}`);
 
             const complaint = response.data;
 
