@@ -12,7 +12,8 @@ function Description() {
 
     const getDetail = async () => {
         try {
-            const response = await axios.get(`https://urban-eye-backend.onrender.com/${id}`);
+            const response = await axios.get(`https://urban-eye-backend.onrender.com/complaint/${id}`);
+
             const complaint = response.data;
 
             let base64Image = null;
